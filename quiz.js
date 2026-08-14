@@ -33,7 +33,7 @@ const missions = [
         icon: "M",
         category: "À LA MAISON",
         title: "Le nom secret",
-        story: "Comment Damien appelle-t-il affectueusement Marie-Ève?",
+        story: "Comment Damien appelle-t-il affectueusement maman?",
         type: "text",
         answers: ["mamou"],
         smallHint: "C’est un surnom qui commence par M.",
@@ -52,22 +52,22 @@ const missions = [
         ],
         answer: "bonus",
         smallHint: "Le mot important veut dire qu’elle est un cadeau de plus dans sa vie.",
-        strongHint: "La réponse est Bonus Daughter."
+        strongHint: "Regarde le fond d’écran de notre chat sur Snapchat. C’est écrit en gros dessus."
     },
     {
         icon: "↑",
         category: "LA CHAMBRE",
         title: "Changement d’étage",
-        story: "Dans le lit superposé, Victoria dormait avant en haut et Rose en bas. Elles ont récemment changé de place. Qui dort maintenant en haut?",
+        story: "Victoria et Rose ont récemment changé de place dans le lit superposé. Qui est maintenant rendue en haut?",
         type: "choice",
         choices: [
             { id: "rose", label: "Rose" },
             { id: "victoria", label: "Victoria" },
-            { id: "papa", label: "Papa, quand il veut la paix" }
+            { id: "step-daron", label: "Le step-daron, quand il veut la paix" }
         ],
         answer: "rose",
-        smallHint: "La réponse a changé récemment.",
-        strongHint: "Rose est maintenant rendue en haut."
+        smallHint: "C’est l’inverse d’avant.",
+        strongHint: "La personne en haut utilise la petite commode de chevet pour monter."
     },
     {
         icon: "00",
@@ -103,16 +103,16 @@ const missions = [
         icon: "D",
         category: "SOUVENIR",
         title: "Le royaume magique",
-        story: "Rose est allée à Disney quand elle était très jeune. Avec qui a-t-elle vécu cette aventure?",
+        story: "Quand Rose est allée à Disney très jeune, avec quel côté de sa famille a-t-elle vécu ce voyage?",
         type: "choice",
         choices: [
-            { id: "grandparents", label: "Ses grands-parents" },
-            { id: "school", label: "Son école" },
-            { id: "friends", label: "Une gang d’amies" }
+            { id: "father-side", label: "Du côté de son père" },
+            { id: "mother-side", label: "Du côté de sa mère" },
+            { id: "both-sides", label: "Les deux côtés ensemble" }
         ],
-        answer: "grandparents",
-        smallHint: "Ce sont deux personnes très importantes d’une génération avant ses parents.",
-        strongHint: "Elle y est allée avec ses grands-parents."
+        answer: "father-side",
+        smallHint: "Zachary était lui aussi du voyage.",
+        strongHint: "Son père, ses grands-parents, son oncle et sa tante étaient aussi présents."
     },
     {
         icon: "P",
