@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#101014">
+    <meta name="description" content="Une nouvelle chasse au trésor familiale créée spécialement pour Rosalie.">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>ROSE // Secret Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="site-header">
+            <a class="wordmark" href="#missionCard" aria-label="Retour au défi courant">
+                <span>ROSE</span><span class="wordmark-slash">//</span><span>QUEST</span>
+            </a>
+            <span class="edition-tag">ÉDITION 2026</span>
+        </header>
+
+        <section class="hero" aria-labelledby="pageTitle">
+            <p class="classification">DOSSIER SECRET — BONUS DAUGHTER</p>
+            <h1 id="pageTitle">La mission<br><span>de Rose</span></h1>
+            <p class="hero-copy">Des souvenirs. Des inside jokes. Une famille. Et un cadeau caché quelque part.</p>
+            <div class="hero-stickers" aria-hidden="true">
+                <span class="sticker sticker-skate">SK8</span>
+                <span class="sticker sticker-star">★</span>
+                <span class="sticker sticker-secret">TOP SECRET</span>
+            </div>
+        </section>
+
+        <section class="progress-panel" aria-label="Progression de la mission">
+            <div class="progress-copy">
+                <span id="progressLabel">MISSION 01</span>
+                <span id="progressPercent">0%</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+                <div id="progressBar" class="progress-bar"></div>
+            </div>
+            <div id="progressSteps" class="progress-steps" aria-hidden="true"></div>
+        </section>
+
+        <section id="missionCard" class="mission-card" aria-live="polite">
+            <div class="card-tape" aria-hidden="true">AUTHORIZED PERSONNEL ONLY</div>
+            <div class="mission-meta">
+                <span id="missionNumber" class="mission-number"></span>
+                <span id="missionCategory" class="mission-category"></span>
+            </div>
+            <div id="missionIcon" class="mission-icon" aria-hidden="true"></div>
+            <h2 id="missionTitle"></h2>
+            <p id="missionStory" class="mission-story"></p>
+
+            <div id="visualClue" class="visual-clue" hidden></div>
+
+            <form id="answerForm" novalidate>
+                <fieldset id="choiceFieldset" class="choice-fieldset" hidden>
+                    <legend>Choisis ta réponse</legend>
+                    <div id="choiceList" class="choice-list"></div>
+                </fieldset>
+
+                <div id="textAnswerGroup" class="text-answer-group">
+                    <label for="answerInput">Entre ta réponse</label>
+                    <input id="answerInput"
+                           name="answer"
+                           type="text"
+                           autocomplete="off"
+                           autocapitalize="sentences"
+                           spellcheck="false"
+                           placeholder="Écris ta réponse ici">
+                </div>
+
+                <button class="action-button primary-button" type="submit">
+                    <span>VALIDER LA RÉPONSE</span>
+                    <span aria-hidden="true">→</span>
+                </button>
+            </form>
+
+            <p id="feedback" class="feedback" role="status"></p>
+
+            <div class="hint-actions">
+                <button id="smallHintButton" class="hint-button" type="button">PETIT INDICE</button>
+                <button id="strongHintButton" class="hint-button" type="button">GROS INDICE</button>
+            </div>
+            <div id="hintBox" class="hint-box" hidden></div>
+        </section>
+
+        <section id="finalCard" class="final-card" hidden>
+            <div class="unlock-badge" aria-hidden="true">UNLOCKED</div>
+            <p class="classification">MISSION ACCOMPLIE</p>
+            <h2>Tu l’as, Rose. ★</h2>
+            <p id="finalMessage" class="final-message"></p>
+
+            <div id="finalMediaFrame" class="final-media-frame">
+                <video id="finalVideo" controls playsinline preload="metadata" hidden></video>
+                <img id="finalImage" alt="Indice montrant l’endroit où le cadeau est caché" hidden>
+                <div id="finalPlaceholder" class="final-placeholder">
+                    <span aria-hidden="true">🎬</span>
+                    <strong>VIDÉO SECRÈTE À VENIR</strong>
+                    <small>Le dernier indice sera placé ici.</small>
+                </div>
+            </div>
+
+            <p class="final-warning">Cette vidéo est ton dernier indice. Observe chaque détail avant de partir à la recherche du vrai cadeau.</p>
+            <button id="restartButton" class="action-button secondary-button" type="button">RECOMMENCER</button>
+        </section>
+
+        <footer>
+            <span>BLINKSUN FAMILY OPS</span>
+            <button id="resetButton" class="reset-button" type="button">Réinitialiser</button>
+        </footer>
+    </main>
+
+    <script src="quiz.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
