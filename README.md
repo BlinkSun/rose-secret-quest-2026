@@ -21,7 +21,7 @@ Nouvelle chasse au trésor Web familiale créée pour Rosalie. Ce projet est ent
 
 ## Personnaliser le quiz
 
-Tout le contenu modifiable se trouve dans `quiz-v3.js` :
+Tout le contenu modifiable se trouve dans `quiz-v4.js` :
 
 - questions;
 - choix de réponses;

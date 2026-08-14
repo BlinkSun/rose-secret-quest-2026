@@ -27,7 +27,7 @@ const missions = [
         ],
         answer: "jan-11",
         smallHint: "C’est vraiment au début de l’année.",
-        strongHint: "Le mois est janvier et le jour est 11."
+        strongHint: "Le mois est janvier et le jour se trouve entre 10 et 12."
     },
     {
         icon: "M",
@@ -37,7 +37,7 @@ const missions = [
         type: "text",
         answers: ["mamou"],
         smallHint: "C’est un surnom qui commence par M.",
-        strongHint: "Le surnom est MAMOU."
+        strongHint: "Le surnom commence par MA et se termine par OU."
     },
     {
         icon: "B+D",
@@ -82,7 +82,7 @@ const missions = [
         ],
         answer: "plain",
         smallHint: "Moins il y en a dessus, mieux c’est.",
-        strongHint: "Elle les mange blanches. Zéro sauce."
+        strongHint: "La bouteille de sauce peut rester dans le réfrigérateur."
     },
     {
         icon: "BLN",
@@ -97,7 +97,7 @@ const missions = [
         ],
         answer: "baloney",
         smallHint: "Un grand classique rose pâle de lunch.",
-        strongHint: "Une bonne sandwich au BALONEY."
+        strongHint: "Ce n’est ni un oiseau ni un poisson."
     },
     {
         icon: "D",
@@ -122,7 +122,7 @@ const missions = [
         type: "text",
         answers: ["puce", "la puce", "ma puce"],
         smallHint: "C’est aussi le nom d’un minuscule insecte qui saute.",
-        strongHint: "Tout le monde l’appelle PUCE."
+        strongHint: "Le mot compte quatre lettres et commence par P."
     },
     {
         icon: "IRL",
@@ -132,8 +132,8 @@ const missions = [
         visual: "PAPIER BLEU // UN SEUL MOT",
         type: "text",
         answers: ["soleil", "le soleil"],
-        smallHint: "Installe-toi dans ton lit du haut et regarde le mur à ta gauche.",
-        strongHint: "Cherche dans le petit bac noir en plastique vissé au mur, celui qui sert de petite case de rangement.",
+        smallHint: "Cherche près de l’endroit où tu dors maintenant.",
+        strongHint: "Quand tu es installée dans ton lit, le papier est caché à portée de main dans quelque chose qui est fixé au mur.",
         successMessage: "CODE ACCEPTÉ. La vidéo secrète est déverrouillée. ★"
     }
 ];
